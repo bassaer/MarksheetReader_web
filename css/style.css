@@ -1,0 +1,55 @@
+@@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../images/newspaper.jpg') no-repeat fixed left bottom;
+  background-size: cover;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0;
+  font-family: Avenir-Black, Meiryo, sans-serif;
+}
+
+.header {
+  padding: 80px 30px;
+  background-color: rgba(38, 38, 38, 0.5);
+  color: #fff
+}
+
+.site-title {
+  display: inline-block;
+  padding: 100px;
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+
+}
+
+.phone-image {
+  display: inline-block;
+}
+
+.link-badge {
+  display: inline-block;
+
+}
+
+.link-badge > img {
+  height: 50px;
+  display: inline-block;
+}
+
+
+
+.phone-image >img {
+  height: 300px;
+  display: inline-block;
+  margin:  10px;
+}
