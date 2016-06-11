@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Mark Sheet Reader</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/normamlize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="lib/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/17c89d4577.css">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -14,43 +17,61 @@
         <h2 class="app-name-sub">for TOEIC</h2>
         <div>
           <a href="#" class="link-badge">
-            <img src="images/itunes.png" alt="itunes-link" class="google-play">
+            <img src="images/itunes.png" alt="itunes-link" class="itunes">
           </a>
           <a href="#" class="link-badge">
-            <img src="images/google-play-badge.png" class="itunes">
+            <img src="images/google-play-badge.png" class="google-play">
           </a>
         </div>
       </div>
       <div class="phone-image">
-        <img src="images/iPhone.png" alt="iphone">
-        <img src="images/android.png" alt="android">
+        <img src="images/iphone_with_screen.png" alt="iphone">
+        <img src="images/android_with_screen.png" alt="android">
       </div>
     </header>
     <section class="detail">
-      <div class="app-feature">
-        <i class="feature-icon fa fa-camera"></i>
-        <div class="feature-title">簡単採点</div>
-        <p class="feature-text">
-
-        </p>
+      <h2 class="heading">採点を一瞬で</h2>
+      <div class="detail-wrapper">
+        <div class="app-feature">
+          <i class="feature-icon fa fa-camera"></i>
+          <div class="feature-title">簡単採点</div>
+          <p class="feature-text">
+            回答したマークシートを<br>
+            カメラで撮るだけで自動採点
+          </p>
+        </div>
+        <div class="app-feature">
+          <i class="feature-icon fa fa-pie-chart"></i>
+          <div class="feature-title">スコアを分析</div>
+          <p class="feature-text">
+            パート別のスコアを分析し<br>
+            苦手傾向を判定
+          </p>
+        </div>
+        <div class="app-feature">
+          <i class="feature-icon fa fa-line-chart"></i>
+          <div class="feature-title">過去の成績を分析</div>
+          <p class="feature-text">
+            過去の試験データから<br>
+            自分の成長を確認
+          </p>
+        </div>
       </div>
-      <div class="app-feature">
-        <i class="feature-icon fa fa-pie-chart"></i>
-        <div class="feature-title">スコアを分析</div>
-        <p class="feature-text">
-
-        </p>
-      </div>
-      <div class="app-feature">
-        <i class="feature-icon fa fa-line-chart"></i>
-        <div class="feature-title">過去の成績を分析</div>
-        <p class="feature-text">
-          
-        </p>
-      </div>
-
     </section>
     <footer class="footer">
+      <p class="copyright">
+        Copyright © Marksheet Reader All Rights Reserved.
+      </p>
     </footer>
+    <script>
+      window.onload = function(){
+        var links = document.querySelectorAll('.link-badge');
+        for(var i=0;i<links.length;++i){
+          links[i].onclick = function(){
+            swal("Coming Soon!", " - 準備中 - ", "error");
+          }
+        };
+      };
+    </script>
   </body>
 </html>
